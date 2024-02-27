@@ -11,7 +11,6 @@ The user interface is easy to use, displayed as below:
 <img src="icons/mainWindow.png" width="80%" >
 
 Main Window
-
 </div> 
 <div align="center">
 <img src="icons/dialog.png" width="60%">

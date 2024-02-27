@@ -8,9 +8,10 @@ the program will recommend the most suitable vitamins for him/her.
 The user interface is easy to use, displayed as below:
 
 <div align="center">
-<img src="icons/mainwindow.png" width="80%" >
+<img src="icons/mainWindow.png" width="80%" >
 
 Main Window
+
 </div> 
 <div align="center">
 <img src="icons/dialog.png" width="60%">

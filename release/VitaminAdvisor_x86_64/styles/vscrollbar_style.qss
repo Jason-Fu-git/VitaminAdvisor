@@ -1,0 +1,77 @@
+QScrollBar:vertical {
+
+    margin: 10px 0px 10px 0px;
+
+    background-color: #707070;
+
+    border: 0px;
+
+    width: 14px;
+
+}
+
+QScrollBar::handle:vertical {
+
+    background-color: #808080;
+
+    border-radius: 7px;
+
+    width: 15px;
+
+}
+
+QScrollBar::handle:vertical:hover {
+
+    background-color: #989595;
+
+}
+
+QScrollBar::sub-line:vertical {
+
+    subcontrol-position: top;
+
+    subcontrol-origin: margin;
+
+    background-color: white;
+
+    height: 16px;
+
+}
+
+QScrollBar::add-line:vertical {
+
+    subcontrol-position: bottom;
+
+    subcontrol-origin: margin;
+
+    background-color: white;
+
+    height: 16px;
+
+}
+
+QScrollBar::up-arrow:vertical {
+
+    border-image: url(:/commonImg/Resources/image/common/arrowUp.png);
+
+    width: 12px;
+
+    height: 6px;
+
+}
+
+QScrollBar::down-arrow:vertical {
+
+    border-image: url(:/commonImg/Resources/image/common/arrowDown.png);
+
+    width: 12px;
+
+    height: 6px;
+
+}
+
+QScrollBar::sub-page:vertical, QScrollBar::add-page:vertical {
+
+    background-color: white;
+
+}

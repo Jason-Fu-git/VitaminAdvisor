@@ -40,7 +40,7 @@ class Ui_Dialog(object):
         # parse submit_txt
         symptom_ls = [symptom.strip() for symptom in self.submit_txt.split("；")]
         vitamin_symptom_dic = {}
-        symptom_vitamin_dic: dict = json.load(open("json/symptom_vitamin.json", "r", encoding="utf-8"))
+        symptom_vitamin_dic: dict = json.load(open("json/symptom_vitamin.json", "r", encoding="utf-8", errors='ignore'))
         for symptom in symptom_ls:
             if symptom in symptom_vitamin_dic.keys():
                 vitamin = symptom_vitamin_dic[symptom]
@@ -49,8 +49,8 @@ class Ui_Dialog(object):
                 else:
                     vitamin_symptom_dic[vitamin] = [symptom]
         # load advice and warning
-        vitamin_advice_dic: dict = json.load(open("json/advise.json", "r", encoding="utf-8"))
-        vitamin_warning_dic: dict = json.load(open("json/warning.json", "r", encoding="utf-8"))
+        vitamin_advice_dic: dict = json.load(open("json/advise.json", "r", encoding="utf-8", errors='ignore'))
+        vitamin_warning_dic: dict = json.load(open("json/warning.json", "r", encoding="utf-8", errors='ignore'))
         # add the corresponding widgets
         for vitamin, symptoms in vitamin_symptom_dic.items():
             tab = QtWidgets.QWidget()

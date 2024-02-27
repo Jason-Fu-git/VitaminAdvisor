@@ -45,3 +45,5 @@ Note that if you want to modify the display, you can simply modify the correspon
 - Data provided by Li Chaoran.
 - UI based on Qt.
 - Icon downloaded from www.iconfont.cn.
+
+Note : This program is only for school assignment. Commercial use is neither allowed nor practical.

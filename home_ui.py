@@ -162,7 +162,7 @@ class Ui_MainWindow(object):
         add category labels and checkboxes to the scroll area
         """
         self.cbox_ls = []
-        category_dic = json.load(open("json/symptom_class.json", "r"))
+        category_dic = json.load(open("json/symptom_class.json", "r", encoding="utf-8", errors='ignore'))
         for category, symptoms in category_dic.items():
             # add a corresponding label for each category
             category_lbl = QtWidgets.QLabel(self.scrollAreaWidgetContents)

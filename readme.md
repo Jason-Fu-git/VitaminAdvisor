@@ -1,5 +1,8 @@
 # Vitamin Advisor
 
+[![Release](icons/release.svg)](https://github.com/Jason-Fu-git/VitaminAdvisor/releases/tag/v1.0.0)
+![Coverage](icons/coverage.svg)
+
 ## Description
 
 This is a PC application for vitamin recommendation. Basically, the user simply inputs his/her symptoms, then

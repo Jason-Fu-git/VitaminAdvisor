@@ -43,11 +43,11 @@ class Ui_Dialog(object):
         symptom_vitamin_dic: dict = json.load(open("json/symptom_vitamin.json", "r", encoding="utf-8", errors='ignore'))
         for symptom in symptom_ls:
             if symptom in symptom_vitamin_dic.keys():
-                vitamin = symptom_vitamin_dic[symptom]
-                if vitamin in vitamin_symptom_dic.keys():
-                    vitamin_symptom_dic[vitamin].append(symptom)
-                else:
-                    vitamin_symptom_dic[vitamin] = [symptom]
+                for vitamin in symptom_vitamin_dic[symptom]:
+                    if vitamin in vitamin_symptom_dic.keys():
+                        vitamin_symptom_dic[vitamin].append(symptom)
+                    else:
+                        vitamin_symptom_dic[vitamin] = [symptom]
         # load advice and warning
         vitamin_advice_dic: dict = json.load(open("json/advise.json", "r", encoding="utf-8", errors='ignore'))
         vitamin_warning_dic: dict = json.load(open("json/warning.json", "r", encoding="utf-8", errors='ignore'))

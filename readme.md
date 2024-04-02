@@ -1,6 +1,6 @@
 # Vitamin Advisor
 
-[![Release](icons/release.svg)](https://github.com/Jason-Fu-git/VitaminAdvisor/releases/tag/v1.0.0)
+[![Release](icons/release.svg)](https://github.com/Jason-Fu-git/VitaminAdvisor/releases/tag/v1.1.0)
 ![Coverage](icons/coverage.svg)
 
 ## Description

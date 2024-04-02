@@ -42,8 +42,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.addItem(spacerItem)
         self.title_lbl = QtWidgets.QLabel(self.centralwidget)
         font = QtGui.QFont()
-        font.setFamily("华文中宋")
-        font.setPointSize(29)
+        font.setFamily("KaiTi")
+        font.setPointSize(30) #标题
         self.title_lbl.setFont(font)
         self.title_lbl.setStyleSheet("color:#707070")
         self.title_lbl.setAlignment(QtCore.Qt.AlignCenter)
@@ -64,7 +64,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_3.setObjectName("verticalLayout_3")
         self.textEdit = QtWidgets.QTextEdit(self.textArea_frm)
         font = QtGui.QFont()
-        font.setFamily("华文宋体")
+        font.setFamily("KaiTi")#症状输入栏
         font.setPointSize(12)
         self.textEdit.setFont(font)
         self.textEdit.setStyleSheet("QTextEdit {\n"
@@ -97,17 +97,17 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3.addItem(spacerItem3)
         self.submit_btn = QtWidgets.QPushButton(self.centralwidget)
         font = QtGui.QFont()
-        font.setFamily("微软雅黑")
-        font.setPointSize(13)
+        font.setFamily("KaiTi")
+        font.setPointSize(23)#提交按钮
         self.submit_btn.setFont(font)
         self.submit_btn.setStyleSheet("QPushButton{\n"
-                                      "background-color : #707070;\n"
+                                      "background-color : #007000;\n"
                                       "border-radius : 15px;\n"
                                       "height : 60px;\n"
                                       "color : white ;\n"
                                       "}\n"
                                       "QPushButton:pressed{\n"
-                                      "background-color : #909090;\n"
+                                      "background-color : #009000;\n"
                                       "}")
         self.submit_btn.setObjectName("submit_btn")
         self.horizontalLayout_3.addWidget(self.submit_btn)
@@ -169,10 +169,10 @@ class Ui_MainWindow(object):
             category_lbl.setMinimumSize(QtCore.QSize(0, 80))
             category_lbl.setMaximumSize(QtCore.QSize(16777215, 80))
             font = QtGui.QFont()
-            font.setFamily("华文中宋")
-            font.setPointSize(16)
+            font.setFamily("KaiTi")
+            font.setPointSize(20)#选项标题的大小
             category_lbl.setFont(font)
-            category_lbl.setStyleSheet("background-color : #707070;\n"
+            category_lbl.setStyleSheet("background-color : #007000;\n"
                                        "height : 70 px;\n"
                                        "color : white;\n"
                                        "padding-left : 20px;")

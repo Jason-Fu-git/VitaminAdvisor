@@ -59,7 +59,7 @@ class Ui_Dialog(object):
             # main label
             vitamin_lbl = QtWidgets.QLabel(tab)
             font = QtGui.QFont()
-            font.setFamily("华文中宋")
+            font.setFamily("KaiTi")
             font.setPointSize(20)
             vitamin_lbl.setFont(font)
             vitamin_lbl.setText(vitamin)
@@ -76,7 +76,7 @@ class Ui_Dialog(object):
             # textBrowser1
             textBrowser1 = QtWidgets.QTextBrowser(tab)
             font = QtGui.QFont()
-            font.setFamily("华文仿宋")
+            font.setFamily("KaiTi")
             font.setPointSize(11)
             textBrowser1.setFont(font)
             textBrowser1.setStyleSheet("border : 0px ;")
@@ -93,7 +93,7 @@ class Ui_Dialog(object):
             # textBrowser2
             textBrowser2 = QtWidgets.QTextBrowser(tab)
             font = QtGui.QFont()
-            font.setFamily("华文仿宋")
+            font.setFamily("KaiTi")
             font.setPointSize(11)
             textBrowser2.setFont(font)
             textBrowser2.setStyleSheet("border : 0px ;")
@@ -110,7 +110,7 @@ class Ui_Dialog(object):
             # textBrowser3
             textBrowser3 = QtWidgets.QTextBrowser(tab)
             font = QtGui.QFont()
-            font.setFamily("华文仿宋")
+            font.setFamily("KaiTi")
             font.setPointSize(11)
             textBrowser3.setFont(font)
             textBrowser3.setStyleSheet("border : 0px ;")

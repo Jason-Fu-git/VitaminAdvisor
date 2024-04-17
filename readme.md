@@ -8,7 +8,7 @@
 This is a PC application for vitamin recommendation. Basically, the user simply inputs his/her symptoms, then
 the program will recommend the most suitable vitamins for him/her.
 
-The user interface is easy to use, displayed as below:
+The user interface is easy to use, displayed as below (prototype):
 
 <div align="center">
 <img src="icons/mainWindow.png" width="80%" >
@@ -44,7 +44,7 @@ Note that if you want to modify the display, you can simply modify the correspon
 
 ## Acknowledgement
 
-- Programmed by Jason Fu.
+- Programmed by Jason Fu and Zhang Zhengyu.
 - Data provided by Li Chaoran.
 - UI based on Qt.
 - Icon downloaded from www.iconfont.cn.

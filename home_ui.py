@@ -65,7 +65,7 @@ class Ui_MainWindow(object):
         self.textEdit = QtWidgets.QTextEdit(self.textArea_frm)
         font = QtGui.QFont()
         font.setFamily("KaiTi")#症状输入栏
-        font.setPointSize(12)
+        font.setPointSize(14)
         self.textEdit.setFont(font)
         self.textEdit.setStyleSheet("QTextEdit {\n"
                                     "                border-radius: 30px;\n"
@@ -120,7 +120,8 @@ class Ui_MainWindow(object):
         spacerItem5 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.verticalLayout_2.addItem(spacerItem5)
         self.horizontalLayout.addLayout(self.verticalLayout_2)
-        self.horizontalLayout.setStretch(1, 2)
+        self.horizontalLayout.setStretch(0, 3)
+        self.horizontalLayout.setStretch(1, 5)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 2013, 38))
@@ -188,6 +189,9 @@ class Ui_MainWindow(object):
                 symptom_cbox = QtWidgets.QCheckBox(category_frm)
                 symptom_cbox.setText(symptom)
                 symptom_cbox.setStyleSheet("")
+                font.setFamily("KaiTi")
+                font.setPointSize(13)  # 选项的大小
+                symptom_cbox.setFont(font)
                 symptom_cbox.clicked.connect(self.checkboxChecked)
                 gridLayout.addWidget(symptom_cbox, index // 2, index % 2, 1, 1)
                 self.cbox_ls.append(symptom_cbox)

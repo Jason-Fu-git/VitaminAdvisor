@@ -60,7 +60,7 @@ class Ui_Dialog(object):
             vitamin_lbl = QtWidgets.QLabel(tab)
             font = QtGui.QFont()
             font.setFamily("KaiTi")
-            font.setPointSize(20)
+            font.setPointSize(25)
             vitamin_lbl.setFont(font)
             vitamin_lbl.setText(vitamin)
             vitamin_lbl.setStyleSheet("padding-top:20px;")
@@ -71,13 +71,15 @@ class Ui_Dialog(object):
             # icon 1
             icon1_lbl = QtWidgets.QLabel(tab)
             icon1_lbl.setText("")
-            icon1_lbl.setPixmap(QtGui.QPixmap("icons/pic1.png"))
+            qpixmap = QtGui.QPixmap("icons/pic1.png").scaled(250, 250, QtCore.Qt.KeepAspectRatio,
+                                                             QtCore.Qt.SmoothTransformation)
+            icon1_lbl.setPixmap(qpixmap)
             verticalLayout.addWidget(icon1_lbl)
             # textBrowser1
             textBrowser1 = QtWidgets.QTextBrowser(tab)
             font = QtGui.QFont()
             font.setFamily("KaiTi")
-            font.setPointSize(11)
+            font.setPointSize(15)
             textBrowser1.setFont(font)
             textBrowser1.setStyleSheet("border : 0px ;")
             verticalScrollBar1 = QtWidgets.QScrollBar(textBrowser1)
@@ -88,13 +90,16 @@ class Ui_Dialog(object):
             # icon 2
             icon2_lbl = QtWidgets.QLabel(tab)
             icon2_lbl.setText("")
-            icon2_lbl.setPixmap(QtGui.QPixmap("icons/pic2.png"))
+            qpixmap = QtGui.QPixmap("icons/pic2.png").scaled(250, 250, QtCore.Qt.KeepAspectRatio,
+                                                             QtCore.Qt.SmoothTransformation)
+            icon1_lbl.setPixmap(qpixmap)
+            icon2_lbl.setPixmap(qpixmap)
             verticalLayout.addWidget(icon2_lbl)
             # textBrowser2
             textBrowser2 = QtWidgets.QTextBrowser(tab)
             font = QtGui.QFont()
             font.setFamily("KaiTi")
-            font.setPointSize(11)
+            font.setPointSize(15)
             textBrowser2.setFont(font)
             textBrowser2.setStyleSheet("border : 0px ;")
             verticalScrollBar2 = QtWidgets.QScrollBar(textBrowser2)
@@ -105,13 +110,16 @@ class Ui_Dialog(object):
             # icon 3
             icon3_lbl = QtWidgets.QLabel(tab)
             icon3_lbl.setText("")
-            icon3_lbl.setPixmap(QtGui.QPixmap("icons/pic3.png"))
+            qpixmap = QtGui.QPixmap("icons/pic3.png").scaled(250, 250, QtCore.Qt.KeepAspectRatio,
+                                                             QtCore.Qt.SmoothTransformation)
+            icon1_lbl.setPixmap(qpixmap)
+            icon3_lbl.setPixmap(qpixmap)
             verticalLayout.addWidget(icon3_lbl)
             # textBrowser3
             textBrowser3 = QtWidgets.QTextBrowser(tab)
             font = QtGui.QFont()
             font.setFamily("KaiTi")
-            font.setPointSize(11)
+            font.setPointSize(15)
             textBrowser3.setFont(font)
             textBrowser3.setStyleSheet("border : 0px ;")
             verticalScrollBar3 = QtWidgets.QScrollBar(textBrowser3)
@@ -127,6 +135,10 @@ class Ui_Dialog(object):
                 textBrowser3.setText(vitamin_warning_dic[vitamin])
             self.tabWidget.addTab(tab, "")
             self.tabWidget.setTabText(self.tabWidget.indexOf(tab), vitamin)
+            font = QtGui.QFont()
+            font.setFamily("KaiTi")
+            font.setPointSize(13)
+            self.tabWidget.setFont(font)
             # set stretch
             verticalLayout.setStretch(0, 1)
             verticalLayout.setStretch(1, 1)
